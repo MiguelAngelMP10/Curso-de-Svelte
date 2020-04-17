@@ -1,4 +1,5 @@
 <script>
+  import About from "./components/About.svelte";
   export let name;
   export let lastName;
   let svelteLogo = "https://arepa.s3.amazonaws.com/svelte-logo.png";
@@ -11,10 +12,6 @@
   }
   :global(:root) {
     --theme-color: purple;
-  }
-  p {
-    color: var(--theme-color);
-    font-size: 22px;
   }
 
   main {
@@ -44,6 +41,6 @@
 
 <main>
   <h1>Hello {name} {lastName}!</h1>
-  <p>Amigo</p>
+  <About />
   <img src={svelteLogo} alt="Svelte" />
 </main>
