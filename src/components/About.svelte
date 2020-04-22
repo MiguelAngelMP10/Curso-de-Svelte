@@ -1,5 +1,6 @@
 <script>
   //logica
+  import Button from "./Button.svelte";
 
   let someText = "Estudiente de Platzi";
   let count = 0;
@@ -31,6 +32,6 @@
     </p>
   {/if}
 
-  <button on:click={handleClick}>click {count === 0 ? '' : count}</button>
-  <button on:click={toggle}>DarkMode</button>
+  <Button text="Click" {count} on:click={handleClick} />
+  <Button text="DarkMode" on:click={toggle} />
 </div>
