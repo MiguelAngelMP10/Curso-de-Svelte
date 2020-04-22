@@ -13,6 +13,15 @@
   });
 </script>
 
+<style>
+  .Photos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 8px;
+  }
+</style>
+
 <div class="Photos">
   {#each photos as photo}
     <figure>
